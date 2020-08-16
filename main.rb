@@ -7,6 +7,9 @@ require 'openssl'
 #  https://www.smslink.ro/get-api-key/
 #
 
+#  HTTPS API Endpoint:  https://secure.smslink.ro/sms/gateway/communicate/index.php
+#  HTTP API Endpoint:   http://www.smslink.ro/sms/gateway/communicate/index.php
+
 url = URI("https://secure.smslink.ro/sms/gateway/communicate/index.php?connection_id=MyConnectionID&password=MyConnectionPassword&to=07xyzzzzzz&message=TestMessage")
 
 http = Net::HTTP.new(url.host, url.port)
